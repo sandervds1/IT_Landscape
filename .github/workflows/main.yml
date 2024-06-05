@@ -13,8 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
- 
-- name: Set repository name variable
+      - name: Set repository name variable
         id: vars
         run: echo "::set-output name=repo::${GITHUB_REPOSITORY,,}"
 
